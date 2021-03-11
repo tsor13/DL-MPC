@@ -48,9 +48,6 @@ def load_error_data():
     # change so (rollout, t, values)
     p = np.swapaxes(p, 1, 2)
     x = np.swapaxes(x, 1, 2)
-    n = 20
-    p = change_time_step(p, n)
-    x = change_time_step(x, n)
     return p, x
 
 
