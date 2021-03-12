@@ -17,6 +17,9 @@ git clone https://github.com/tsor13/DL-MPC
 
 This repo contains all data used and all training code used for the paper. There is also a script for inference that you can use to simulate your own plots to see how the models fit the data.
 
+## Authors
+This code is provided by Taylor Sorensen, Curtis Johnson, and Tyler Quackenbush. For any questions, please reach out to Taylor at tsor1313@gmail.com.
+
 ## Usage
 
 To generate your own plots for how well the models fit the data, run
@@ -50,3 +53,4 @@ Meanwhile, let's look at some hardware data:
 In this case, the green line matches much better, as the error model has learned the unexplained dynamics well. The gap between the orange and blue lines represent both the difference between the first-principles model and the simulated DNN plus the gap between the first-principles model and unexplained dynamics.
 
 We encourage interested readers to generate their own plots to validate the performance of the models.
+
