@@ -42,7 +42,7 @@ def save_plot_inference(dataset, suptitle, filename, model_simulated, model_erro
     '''
     # run
     actions, state0, deltas = dataset[np.random.randint(len(dataset))]
-    actions, state0, deltas = torch.Tensor(actions), torch.Tensor(state0), torch.Tensor(deltas)
+    actions, state0, deltas = torch.Tensor(actions).to(device), torch.Tensor(state0).to(device), torch.Tensor(deltas).to(device)
     state_est_sim = []
     state_est_both = []
     s_sim, s_both = state0, state0
@@ -67,7 +67,7 @@ def save_plot_inference(dataset, suptitle, filename, model_simulated, model_erro
     state_est_both = np.array(state_est_both)
     state0 = state0.cpu().numpy()
 
-    state_actual = deltas + state0
+    state_actual = deltas.cpu().numpy() + state0
 
     plt.figure(figsize=(12, 6))
     plt.suptitle(suptitle)
