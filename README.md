@@ -18,7 +18,7 @@ git clone https://github.com/tsor13/DL-MPC
 This repo contains all data used and all training code used for the paper. There is also a script for inference that you can use to simulate your own plots to see how the models fit the data.
 
 ## Authors
-This code is provided by Taylor Sorensen, Curtis Johnson, and Tyler Quackenbush. For any questions, please reach out to Taylor at tsor1313@gmail.com.
+This code is provided by Taylor Sorensen, Curtis Johnson, Tyler Quackenbush, David Wingate, and Marc Killpack. For any questions, please reach out to Taylor at tsor1313@gmail.com.
 
 ## Usage
 
