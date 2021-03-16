@@ -26,7 +26,7 @@ To generate your own plots for how well the models fit the data, run
 ```
 python3 inference.py
 ```
-This will generate 10 random plots for both simulated first-principles Data and hardware data. It outputs these plots under `./plots/`.
+This will generate 10 random plots for both simulated first-principles data and hardware data. It outputs these plots under `./plots/`.
 
 If you wish to retrain the models on the data, run
 ```
